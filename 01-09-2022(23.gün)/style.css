@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+
+}
+body{
+    background-color: antiquewhite;
+    padding: 50px;
+}
+.section{
+    height: 50px;
+}
+.recipe1{
+    padding: 40px;
+    border-radius: 15px;
+    background-color: #fff;
+    width: 467px;
+    box-shadow:0 16px 35px -30px #F55951 ;
+}
+
+.recipe1 ul{
+    display: flex;
+    justify-content: space-between;
+}
+.recipe1 ul li{
+    flex: 1 ;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+.recipe1 ul li img{
+    margin-right: 10px;
+}
+/* .component{
+    &--recipe-1{
+        padding: 40px;
+        border-radius: 15px;
+        background-color: #fff;
+    }
+} */
+.recipe2{
+    background-color: #fff;
+    width: 353px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow:0 20px 60px -45px  #F55951 ;
+}
+.recipe2 h6{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.recipe2 ul{
+    display: flex;
+  
+}
+.recipe2 ul li{
+    flex: 1;
+    background-color: #FAF2F0;
+    border: 1px solid #EDD2CB;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    font-size: 16px;
+}
+.recipe2 ul li:hover{
+    transition: all 0.5s ease;
+    cursor: pointer;
+    background-color: #F55951;
+    color: #FFF;
+    border-color: #F55951;
+    box-shadow: 0 7px 20px -6px #F55951;
+}
+.recipe3{
+    background-color: #F55951;
+    border-radius: 25px;
+    padding: 40px;
+    width: 420px;
+    box-shadow: 0 7px 20px -6px #F55951;
+}
+.recipe3 h5{
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 16px 35px -30px #F55951;
+}
+.recipe3 form{
+    position: relative;
+}
+.recipe3 form .icon{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.recipe3 form .icon:hover{
+    cursor: pointer;
+    transform:scale(1.5);
+    transition: all 0.5s ease;
+}
+
+.recipe3 form input{
+    width: 100%;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 16px;
+    padding: 0 20px 0 60px;
+}
+.recipe4{
+    width: 340px;
+    background-color: #fff;
+    border-radius: 25px;
+    overflow:hidden;/*taştığı için border radius uygulanamadı*/
+    box-shadow: 0 7px 20px -6px #f3807a;
+}
+.recipe4 .cover{
+    width: 100%;
+    height: 181px;
+    background:url(./img-17/sample-1.png)no-repeat center;
+}
+.recipe4 .inner{
+    padding: 30px 30px 40px;
+    text-align: center;
+}
+.recipe4 .inner h6,h5{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.recipe4 .inner form input{
+    width: 100%;
+    height:35px;
+    border: 1px solid #ec807a;
+    border-radius: 5px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+.recipe4 .inner form button{
+    cursor: pointer;
+    width: 100%;
+    height:35px;
+    background-color: #F55951;
+    box-shadow: 0 7px 20px -10px #F55951;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+.recipe5{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow:0 20px 60px -34px #F55951 ;
+    width: 624px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.recipe5 .heart{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #F2DBD5;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.recipe5 .heart img{
+    width: 30px;
+}
+/* .recipe5 .heart svg path{
+    stroke:#111127;
+    iconun kenar rengini beyaz yapmaya çalıştım ama olmadı
+} */
+/* .recipe5 .heart svg path{
+    stroke: #111127;
+}
+.recipe5 .heart svg path:active{
+    border-color: #F55951;
+    background-color: #F55951;
+    stroke: #fff;
+} */
+.recipe5 .heart:hover{
+    transition: all 0.5s ease;
+    background-color: #F55951;
+}
+.recipe5 .inner{margin-left: 25px;
+}
+.recipe5 .inner a{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+.recipe5 .inner .raiting{
+    display: flex;
+}
+.recipe6{
+    background-color: white;
+    padding: 40px 84px;
+    border-radius: 25px;
+    box-shadow:0 20px 60px -34px #F55951 ;
+}
+.recipe6 .swiper-slide a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin-top: 10px;
+    border: 1px solid transparent;
+} 
+.recipe6 .swiper-slide a:hover{
+    cursor: pointer;
+    border-color: #EDD2CB;
+}
+.recipe6 .swiper-slide .title{
+    margin-top: 30px;
+}
+

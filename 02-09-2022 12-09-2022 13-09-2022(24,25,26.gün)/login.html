@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <label>
+            kullanıcı adınız giriniz:
+            <input type="text">
+        </label>
+        <br><br>
+        <label>
+            şifrenizi giriniz:
+            <input id="password" type="password">
+        </label>
+        <br><br>
+       <label>
+        <input id="checkbox" type="checkbox">
+        şifreyi göster/gizle
+       </label>
+        <br><br>
+        <button>giriş</button>
+    <script>
+        const password=document.getElementById("password");
+        const checkbox=document.querySelector("#checkbox");
+        checkbox.addEventListener("click",(e)=>{
+            console.log(e.target.checked);
+            if (e.target.checked==true) {
+                password.setAttribute("type","text");
+            } else {
+                password.setAttribute("type","password");
+            }
+        })
+        password.addEventListener("change",(z)=>{
+            console.log(z.target.value);
+
+        })
+    </script>
+</body>
+</html>
