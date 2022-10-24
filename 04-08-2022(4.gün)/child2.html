@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* an+bn indeskler 0 dan başlıyor*/
+        
+        ul {
+            font-size: 1.2em;
+            list-style-type: none;
+            /*başındaki noktaları kaldırdık*/
+        }
+        
+        ul li:nth-child(2n) {
+            color: palevioletred;
+        }
+        
+        ul li:nth-child(2n+1) {
+            color: teal;
+        }
+        
+        ul li:nth-child(n+4) {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>element</li>
+        <li>element</li>
+        <li>element</li>
+        <li>element</li>
+        <li>element</li>
+        <li>element</li>
+        <li>element</li>
+        <li>element</li>
+        <li>element</li>
+        <li>element</li>
+        <li>element</li>
+    </ul>
+</body>
+</html>

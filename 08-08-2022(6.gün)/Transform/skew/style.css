@@ -1,0 +1,25 @@
+    div#kutukapsa {
+        width: 940px;
+        height: 470px;
+        border: 2px solid red;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /*ortalıyor*/
+        /*overflow: hidden taşmayı önlüyor*/
+    }
+    
+    div.kutu {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        transition: 1s;
+        /*olay 1 saniye sonra başlayacak*/
+    }
+    
+    div#kutukapsa:hover div.kutu {
+        /*eğiltme,yamultma*/
+        transform: skew(10deg, 20deg);
+    }

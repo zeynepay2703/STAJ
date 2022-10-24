@@ -1,0 +1,70 @@
+div#kutukapsa {
+    width: 1200px;
+    height: 600px;
+    border: 2px solid red;
+    margin: auto;
+}
+
+div.kutu {
+    width: 200px;
+    height: 200px;
+    background-color: salmon;
+    animation-name: animasyon;
+    animation-duration: 5s;
+    /*tek tur 5 saniye olsun dedik*/
+    /* animation-timing-function: linear;
+    animasyonun hzı*/
+    animation-iteration-count: infinite;
+    /*inifinite:sonsuza kadar,
+        2 dersen 2 kere yol alır*/
+    animation-direction: alternate;
+    /*çarpıp geri döner*/
+    /*reverse:yönünü belirledik,ters gider
+       alternate-reverse de olabilir*/
+    animation-fill-mode: none;
+    /*bu özellik  ile animasyonu ya sağda
+     ya da soldan başlar
+     forwards
+     backwards*/
+    animation-delay: 2s;
+    /*animasyon 2 saniye beklesin
+    öyle çalışsın*/
+}
+
+
+/*div.kutu:hover {
+        animation-play-state: paused;
+        üzerine geldiğinde kutu durur*/
+
+
+/*div #kutukapsa:hover div.kutu {
+    animation-play-state: running;
+    mouse kırmızı çizginin içinde 
+    olduğu vakit animasyon çalışır*/
+
+
+/*@keyframes animasyon {
+    from {
+        background-color: yellow;
+        margin-left: 0px;
+    }
+    to {
+        background-color: olive;
+        margin-left: 1000px;
+    }
+}*/
+
+@keyframes animasyon {
+    0% {
+        background-color: yellow;
+        margin-left: 0px;
+    }
+    50% {
+        background-color: black;
+        margin-left: 1000px;
+    }
+    100% {
+        background-color: purple;
+        height: 300px;
+    }
+}

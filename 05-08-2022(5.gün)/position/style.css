@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navbar .picture {
+    width: 250px;
+     height: 75px;
+}
+    
+.navbar .link {
+    width: 35%;
+    height: 75%;
+    background-color: #1c1c1c;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+    
+.navbar .link a {
+    color: aliceblue;
+    margin: auto;
+}
+    
+.space {
+    width: 970px;
+    height: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+    
+.space .content1 {
+    width: 970px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+    
+.content1 .picture2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+    
+.space .content1 .lorem1 {
+    width: 315px;
+    height: 300px;
+    background-color: #d3d3d3;
+}
+    
+@import .space .content1 .lorem1 p {
+    text-align: center;
+}
+    
+.space .content1 .lorem1 a {
+    position: relative;
+    top: 100px;
+    left: 140px;
+    color: orange;
+}
+    
+.space .content1 .picture2 {
+    width: 630px;
+    height: 300px;
+}
+    
+.space .content2 {
+    width: 970px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+    
+.space .content2 .lorem2 {
+    width: 315px;
+    height: 300px;
+}
+    
+.space .content2 .lorem2 .image1 {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+    
+.space .content2 .lorem2 a {
+    color: orange;
+}
+    
+.space .content2 .a {
+    width: 630px;
+    height: 300px;
+    display: flex;
+}
+    
+.space .content2 .a .lorem3 {
+    width: 315px;
+    height: 300px;
+}
+    
+.space .content2 .a .lorem3 .image2 {
+    float: left;
+}
+    
+.space .content2 .a .lorem4 {
+    width: 315px;
+    height: 300px;
+}
+    
+.space .content2 .a .lorem4 .image3 {
+    float: left;
+}
+    
+.space .content2 .a a {
+    color: orange;
+}
+    
+.space .content3 {
+    width: 970px;
+    height: 300px;
+    display: flex;
+}
+    
+.space .content3 .lorem5 {
+    width: 315px;
+    height: 300px;
+    }
+    
+.space .content3 .lorem5 a {
+    color: orange;
+    }    
+            
+     
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    color: white;
+    }
+            
+.footer p {
+    position: relative;
+    top: 40px;
+    left: 80px;
+    }

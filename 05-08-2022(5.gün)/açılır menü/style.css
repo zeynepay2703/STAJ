@@ -1,0 +1,40 @@
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul#main li {
+    float: left;
+    position: relative;
+    width: 150px;
+}
+
+ul#main li ul
+{
+    display: none;
+    /*alt seçenekleri gizledik*/
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+
+ul li a {
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    background-color: antiquewhite;
+    text-align: center;
+    color: salmon;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: blue;
+    color: white;
+}
+
+ul#main li:hover ul {
+    display: block;
+}

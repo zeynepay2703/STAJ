@@ -1,0 +1,27 @@
+/*2D Transform*/
+
+div#kutukapsa {
+    width: 940px;
+    height: 470px;
+    border: 2px solid red;
+    margin: auto;
+}
+
+div.kutu {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    float: left;
+    transition: 1s;
+    /*olay 1 saniye sonra başlayacak*/
+}
+
+div#kutukapsa:hover div.kutu
+/*kutu kapsanın içine gelince siyahlar
+hareket edecek*/
+
+{
+    /*TRANSLATE:kendi koonumundan başka
+    bir konuma taşıma.ilkdeğer x konumu,diğeri y konumu*/
+    transform: translate(200px, 200px);
+}

@@ -1,0 +1,55 @@
+    .kutu {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        /*animasyonuma isim verdim*/
+        animation-name: animasyon;
+
+        /*olayın kaç saniyede olacağını belirledim*/
+        animation-duration: 10s;
+
+        /*başlangıç ve bitiş için hızları aynı belirledim*/
+        animation-timing-function: linear;
+
+        /*animasyonun sürekli tekrarlanmasını sağladım*/
+        animation-iteration-count: infinite;
+
+        /*animasyon son kareye geldiğinde bu sefer
+        tam tersi son kareden başlar ve ilk kareye döner*/
+        animation-direction: alternate;
+
+        /*varsayılan değerdir*/
+        animation-fill-mode: none;
+        
+        position: absolute;
+    }
+    
+    @keyframes animasyon {
+        0% {
+            background: salmon;
+            transform: rotate(0deg);
+            top: 10%;
+            left: 10%;
+        }
+        25% {
+            background: khaki;
+            top: 10%;
+            left: 80%;
+        }
+        50% {
+            background: #5fff56;
+            top: 80%;
+            left: 80%;
+        }
+        75% {
+            background: purple;
+            top: 80%;
+            left: 10%;
+        }
+        100% {
+            background: #568eff;
+            transform: rotate(360deg);
+            top: 10%;
+            left: 10%;
+        }
+    }
