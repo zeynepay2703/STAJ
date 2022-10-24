@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #date,#submit2{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="date" id="startDate">
+    <input type="date" id="endDate">
+    <input type="date" id="date">
+
+    <button onclick="myFunction()" id="submit1">submit</button>
+    <button id="submit2">submit</button>
+
+    <p id="write_start_date"></p>
+    <p id="write_end_date"></p>
+    <script>
+      var submit1=document.getElementById("submit1");
+      var submit2=document.getElementById("submit2");
+      var date=document.getElementById("date");
+
+      function myFunction()
+      {
+        var startDateInput=document.getElementById("startDate");
+        var startDate=startDateInput.value;
+        var endDateInput=document.getElementById("endDate");
+        var endDate=endDateInput.value;
+
+        date.style.display='block';
+        submit2.style.display='block';
+        startDateInput.style.display='none';
+        endDateInput.style.display='none';
+        submit1.style.display='none';
+        
+        date.setAttribute("min",startDateInput.value);
+        date.setAttribute("max",endDateInput.value);
+    }
+
+    </script>
+</body>
+</html>

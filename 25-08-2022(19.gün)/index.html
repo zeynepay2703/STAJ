@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Uygulamalı Slider Yapımı</h1>
+        <img src="" name="slide" width="200" height="300" >
+    </div>
+    <script>
+        var i=0;
+        var images=['https://i.picsum.photos/id/827/200/300.jpg?hmac=0Q7y5JGXuxSXgO7VUvdNhXC4yoAupOJiKmRS9RoPqs8','https://i.picsum.photos/id/360/200/300.jpg?hmac=Fl1CgUfxrFjmcS1trYDG80XpEjYixcXfc2uTtCxFkDw','https://i.picsum.photos/id/47/200/300.jpg?hmac=qgEtmhYzb3otRNnLN3afPLzmn6VJKj6x86OGOjDcBxQ'];
+        var duration=2000;
+        function slideImg(){
+            document.slide.src=images[i];
+            if(i<images.length-1)
+            {
+                i++;
+            }
+            else{
+                i=0;
+            }
+            setTimeout("slideImg()" ,duration);
+        }
+        window.onload=slideImg;
+    </script>
+</body>
+</html>
