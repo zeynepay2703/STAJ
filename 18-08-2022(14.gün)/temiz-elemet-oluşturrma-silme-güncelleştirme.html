@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+</head>
+<body>
+    <h1 class="header">hello</h1>
+    <ul id="list" class="list-group">
+        <li class="list-item list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, eveniet?</li>
+        <li class="list-item list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li class="list-item list-group-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae eos nihil harum perspiciatis vitae.</li>
+    </ul>
+    <button type="submit" class="btn btn-primary" id="add-btn">ekle</button>
+    <script>
+        const liste=document.getElementById("list");  
+        const addbtn=document.querySelector("#add-btn");
+        addbtn.addEventListener("click",()=>{
+            let eklenecekEleman=`
+            <li class="list-item list-group-item">Lorem ipsum dolor sit amet</li>
+            `;
+            liste.insertAdjacentHTML("beforeend",eklenecekEleman);
+        })
+    </script>
+</body>
+</html>

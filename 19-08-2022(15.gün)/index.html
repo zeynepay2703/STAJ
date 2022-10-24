@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="my-divs">merhaba</div>
+    <div class="my-divs">hello</div>
+    <div class="my-divs">bonjour</div>
+    <div class="my-divs">hi</div>
+    
+    <button id="mybutton">text</button>
+    <button id="dgs">değiştir text</button>
+
+    <script>
+    const sonuc=document.querySelector("#mybutton");
+    sonuc.style.backgroundColor="red";
+    const buton=document.getElementsByClassName("my-divs");
+
+    // console.log(buton[1].innerHTML);
+    // console.log(buton[2].innerText);
+
+    const btn=document.getElementById("dgs");
+    btn.addEventListener("click",()=>{
+    // console.log("tiklandi");
+    for (let index = 0; index <buton.length; index++) {
+        buton[index].innerHTML=index+1;      
+        }
+    })
+    </script>
+</body>
+</html>
